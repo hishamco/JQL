@@ -1,6 +1,6 @@
 JSON Query Language  (JQL)
 =========================
-JQL is used to query a JSON file. It seems like SQL for DBMS.
+JQL is a language used to query a JSON file. It seems like SQL for DBMS.
 ###Grammer Specification
 A grammar specifications may contain directives that are used to customize the generated parser or declare how some symbols will be used in the grammar.
 ```
