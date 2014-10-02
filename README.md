@@ -25,6 +25,45 @@ digit          = [0-9]
 > * ```[x-y]``` the value between x and y
 
 ###Sample Queries
+Sample.json
+```
+{
+    "Categories": [
+        {
+            "Id": 1,
+            "Name": "Category 1",
+            "Products": [
+                {
+                    "Name": "Product 1",
+                    "Price": "789.3"
+                },
+                {
+                    "Name": "Product 2",
+                    "Price": "566"
+                }
+            ]
+        },
+        {
+            "Id": 2,
+            "Name": "Category 2",
+            "Products": [
+                {
+                    "Name": "Product 1",
+                    "Price": "789.3"
+                },
+                {
+                    "Name": "Product 2",
+                    "Price": "566"
+                },
+                {
+                    "Name": "Product 3",
+                    "Price": "231"
+                }
+            ]
+        }
+    ]
+}
+```
 The following table shows some of the JQL queries and its equivalent in SQL:
 
 JQL                   | SQL
