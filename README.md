@@ -4,17 +4,17 @@ JQL is a language used to query a JSON file. It seems like SQL for DBMS.
 ###Grammer Specification
 A grammar specifications may contain directives that are used to customize the generated parser or declare how some symbols will be used in the grammar.
 ```
-<Query>		 ::= <Identifier> [ (<Elements>)? ]
-<Elements>   ::= <Element> | <Element> , <Elements> 
-<Element>	 ::= <Pair> | <Identifier> 
-<Pair>	     ::= <Identifier> : <Value>
-<Value>	     ::= <String> | <Number> | boolean | null
-<Identifier> ::= letter (letter | digit)*
-String		 ::= " (letter | digit)* "
-Number	 	 ::= (digit)+(.(digit)+)?
-boolean		   = true | false
-letter         = [a-zA-Z]
-digit          = [0-9]
+<query>		 ::= <identifier> [ (<elements>)? ]
+<elements>   ::= <element> | <element> , <elements> 
+<element>	 ::= <pair> | <identifier> 
+<pair>	     ::= <identifier> : <value>
+<value>	     ::= <string> | <number> | <boolean> | null
+<identifier> ::= <letter> (<letter> | <digit>)*
+<string>	 ::= " (<letter> | <digit>)* "
+<number>	 ::= (<digit>)+
+<boolean>	 ::= true | false
+<letter>     ::= [a-zA-Z]
+<digit>      ::= [0-9]
 ```
 > **Notes:**
 > * ```<token>``` to declare a token
