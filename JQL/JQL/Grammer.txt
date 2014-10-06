@@ -1,0 +1,11 @@
+﻿<query>		 ::= <identifier> [ (<elements>)? ]
+<elements>	 ::= <element> | <element> , <elements> 
+<element>	 ::= <pair> | <identifier> 
+<pair>		 ::= <identifier> : <value>
+<value>	     ::= <string> | <number> | <boolean> | null
+<identifier> ::= <letter> (<letter> | <digit>)*
+<string>	 ::= " (<letter> | <digit>)* "
+<number>	 ::= [<digit>]+
+<boolean>	 ::= true | false
+<letter>     ::= [a-zA-Z]
+<digit>      ::= [0-9]
