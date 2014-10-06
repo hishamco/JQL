@@ -22,7 +22,7 @@ A grammar specifications may contain directives that are used to customize the g
 > * ```x?``` to say that x is optional
 > * ```x+``` to say that x can appear at least 1 time
 > * ```x*``` to say that x can appear 0 or many times
-> * ```[x-y]``` the value between x and y
+> * ```[x-y]``` to say that the value between x and y
 
 ###Sample Queries
 Sample.json
